@@ -1,0 +1,15 @@
+﻿global using Npgsql.EntityFrameworkCore.PostgreSQL;
+global using Npgsql;
+global using Npgsql.EntityFrameworkCore.PostgreSQL.Design;
+global using Npgsql.EntityFrameworkCore;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.EntityFrameworkCore.Design;
+global using Microsoft.EntityFrameworkCore;
+global using System.ComponentModel.DataAnnotations.Schema;
+global using System.ComponentModel.DataAnnotations;
+global using Project1.Data;
+global using Project1.Models;
+global using Project1.ViewModels;
+global using Microsoft.AspNetCore.Authorization;

@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{2ED3CFA2-F14A-4ED9-B05E-3CA64C7F2256}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/DashboardController.cs">
+    <Files>
+      <File FileName="Views/Dashboard/MyPosts.cshtml" Line="1" Column="1" />
+      <File FileName="Controllers/DashboardController.cs" Line="152" Column="14" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Project1">
+            <Node name="Project1">
+              <Node name="Controllers" expanded="True">
+                <Node name="DashboardController.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Account" expanded="True" />
+                <Node name="Dashboard" expanded="True" />
+                <Node name="Home" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Project1 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
