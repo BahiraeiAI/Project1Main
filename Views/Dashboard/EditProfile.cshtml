@@ -1,0 +1,46 @@
+﻿
+@model UserViewModel;
+
+@{
+    ViewData["Title"] = "Edit Profile";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-lg rounded-4 border-0">
+                <div class="card-header bg-gradient bg-primary text-white text-center rounded-top-4">
+                    <h4 class="mb-0 fw-bold">Edit Profile</h4>
+                </div>
+                <form asp-action="EditProfile" asp-controller="Dashboard" method="post">
+                    <div class="card-body p-4">
+                        <h5 class="mb-3 text-secondary">User Information</h5>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">ID (read-only)</label>
+                            <input type="text" class="form-control" value="@Model.Id" readonly />
+                            <input type="hidden" asp-for="Id" />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="UserName" class="form-label fw-semibold"></label>
+                            <input asp-for="UserName" class="form-control" />
+                            <span asp-validation-for="UserName" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label fw-semibold"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center bg-light rounded-bottom-4">
+                        <button type="submit" class="btn btn-primary btn-sm">Save Changes</button>
+                        <a asp-action="EditProfile" asp-controller="Dashboard" class="btn btn-outline-secondary btn-sm">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
